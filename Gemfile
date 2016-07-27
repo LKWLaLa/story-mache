@@ -17,7 +17,7 @@ gem 'angular-ui-router-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use ActiveModel::Serializer
-gem 'active_model_serializers', '~> 0.10.0'
+gem 'active_model_serializers'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
