@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'angularjs-rails'
 # Use ui-router module with angular
 gem 'angular-ui-router-rails'
+# Use angular templates
+gem 'angular-rails-templates'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use ActiveModel::Serializer
