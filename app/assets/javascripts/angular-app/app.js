@@ -4,10 +4,12 @@ angular
     $stateProvider
       .state('landing', {
         url: '/',
-        templateUrl: 'landing.html'
-        });
-      
-    
+        templateUrl: 'landing.html',
+        controller: function ($scope) {
+          $scope.active = function() { return true; };
+        }
+      });
+          
     $urlRouterProvider.otherwise('/');
    });
   

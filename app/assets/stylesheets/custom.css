@@ -1,9 +1,9 @@
-#landing {
+.landing-page {
   background-image: url('/assets/bookshelf.jpg');
   background-size: cover;
 }
 
-#landing h1 {
+.landing-page h1 {
   font-size: 7vw;
 }
 
