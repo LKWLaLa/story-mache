@@ -7,6 +7,19 @@
   font-size: 7vw;
 }
 
+.landing-page #text-and-button {
+  margin-top: 5em;
+  padding: 9em;
+  text-align: center;
+}
+
+.landing-page #enter-button {
+  height: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
 
 
 
