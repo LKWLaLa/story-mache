@@ -9,8 +9,8 @@ angular
           $scope.active = function() { return true; };
         }
       })
-      .state('stories', {
-        url: '/stories',
+      .state('home', {
+        url: '/home',
         templateUrl: 'stories.html',
         controller: 'StoriesController as stories',
         resolve: {
