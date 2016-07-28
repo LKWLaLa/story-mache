@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# Sprockets 3.7.0
+gem 'sprockets', '3.7.0'
 
 # Use angularjs front end
 gem 'angularjs-rails'
