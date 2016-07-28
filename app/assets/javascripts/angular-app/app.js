@@ -8,6 +8,16 @@ angular
         controller: function ($scope) {
           $scope.active = function() { return true; };
         }
+      })
+      .state('stories', {
+        url: '/stories',
+        templateUrl: 'stories.html',
+        controller: 'StoriesController as stories',
+        resolve: {
+          stories: function (StoriesService) {
+            return StoriesService.getStories();
+          }
+        }
       });
           
     $urlRouterProvider.otherwise('/');
