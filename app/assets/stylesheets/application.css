@@ -11,5 +11,9 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require tuktuk
+ *= require tuktuk.grid
+ *= require tuktuk.theme.default
+ *= require tuktuk.icons
  *= require_self
  */
