@@ -12,7 +12,7 @@
 //
 //= require angular
 //= require angular-ui-router
-//= require jquery
-//= require jquery_ujs
+//= //= require angular-rails-templates
 //= require tuktuk
 //= require_tree .
+//= require_tree ../templates
