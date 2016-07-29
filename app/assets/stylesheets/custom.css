@@ -1,19 +1,15 @@
-.landing-page {
-  background-image: url('/assets/bookshelf.jpg');
-  background-size: cover;
-}
 
-.landing-page h1 {
+#text-and-button h1 {
   font-size: 7vw;
 }
 
-.landing-page #text-and-button {
+#text-and-button {
   margin-top: 5em;
   padding: 9em;
   text-align: center;
 }
 
-.landing-page #enter-button {
+#enter-button {
   height: 3em;
   white-space: nowrap;
   overflow: hidden;
