@@ -4,10 +4,7 @@ angular
     $stateProvider
       .state('landing', {
         url: '/',
-        templateUrl: 'landing.html',
-        controller: function ($scope) {
-          $scope.active = function() { return true; };
-        }
+        templateUrl: 'landing.html'
       })
       .state('stories', {
         url: '/stories',
