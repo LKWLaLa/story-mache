@@ -15,3 +15,8 @@
   overflow: hidden;
   text-align: center;
 }
+
+.trees {
+  background-image: url('/assets/trees.jpg');
+  background-size: cover;
+}
