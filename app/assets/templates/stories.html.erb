@@ -1,48 +1,26 @@
+<section class="margin-bottom">
+    <div class="row">
+        <div class="column_12">
+            <h5 class="text italic inline padding-top">“The adventures first, explanations take such a dreadful time.” -Lewis Carroll</h5>
 
+            <div class="inline on-right padding-top padding-bottom">
 
-    <section class="padding trees">
-        <div class="row ">
-            
-            <div class="column_9 color white">
-                <h1 class="text theme margin-top"><strong>story</strong>mâché</h1><br>
-            
-                <h4 class="text justify margin-bottom">Welcome!  Below you'll find an ongoing list of collaborative stories.  Search to find specific stories to read or contribute to, browse at your leisure, or start a new story!  Enjoy!</h4>
+                <span class="icon search"></span> 
 
-              </div><!--column-->
-          </div><!--row-->
-    </section>
+                <input ng-model="stories.search" class="button secondary small text bold" placeholder="Search"></input>
+                <br><br>
 
-    <section class="bck dark">
-        <div class="row text center">
-            <nav data-tuktuk="menu" class="column_12 padding text bold">
-                <a href="#" ><span class="icon book"></span>Stories<small>(100)</small></a>
-                 <a href="#"><span class="icon star"></span>About</a>
-                <a href="#"><span class="icon pencil"></span>Start a new story</a>
-                <a href="#"><span class="icon bar-chart"></span>Stats</a>                
-            </nav>
-        </div>
-    </section>
+            </div><!--search-->            
+        </div><!--column-->
+    </div><!--row 1-->
 
-
-    <section class="margin-bottom">
-        <div class="row padding-top padding-bottom">
-            <div class="column_12">
-                <h5 class="text italic inline padding-top">“No, no! The adventures first, explanations take such a dreadful time.” -Lewis Carroll</h5>
-                <nav class="inline on-right">
-
-                    <span class="icon search"></span>
-                    <input ng-model="stories.search" class="button secondary small text bold" placeholder="Search"></input>
-
-                </nav>
-                <br><br>              
-            </div>
+    <div class="row">
 
         <ul ng-repeat="story in stories.data | filter: stories.search">   
             <li class="column_3">
               <div class="bck light text center padding-top padding-bottom">{{story.title}}</div><br>
             </li>
-        <ul>    
-        </div>
-    </section>
+        <ul> 
 
-    
+    </div><!--row 2-->
+</section>
