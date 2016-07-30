@@ -27,15 +27,17 @@
     <section class="margin-bottom">
         <div class="row padding-top padding-bottom">
             <div class="column_12">
-                <h2 class="text bold inline">Stories</h2>
+                <h4 class="text italic inline">Once upon a time...</h4>
                 <nav class="inline on-right">
-                    <a href="#" class="button secondary small "><span class="icon search"></span>Search</a>
-                    <a href="#" class="button small">Filter</a>
+
+                    <span class="icon search"></span>
+                    <input ng-model="stories.search" class="button secondary small text bold" placeholder="Search"></input>
+
                 </nav>
                 <br><br>                
             </div>
 
-        <ul ng-repeat="story in stories.data">   
+        <ul ng-repeat="story in stories.data | filter: stories.search">   
             <li class="column_3">
               <div class="bck light text center padding-top padding-bottom">{{story.title}}</div><br>
             </li>
