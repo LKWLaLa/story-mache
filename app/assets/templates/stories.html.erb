@@ -32,11 +32,13 @@
                     <a href="#" class="button secondary small "><span class="icon search"></span>Search</a>
                     <a href="#" class="button small">Filter</a>
                 </nav>
-                <br><br>
-                
+                <br><br>                
             </div>
+
         <ul ng-repeat="story in stories.data">   
-            <li class="column_3 bck light text center">{{story.title}}</li>
+            <li class="column_3">
+              <div class="bck light text center padding-top padding-bottom">{{story.title}}</div><br>
+            </li>
         <ul>    
         </div>
     </section>
