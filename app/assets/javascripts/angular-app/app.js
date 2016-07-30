@@ -9,7 +9,11 @@ angular
       .state('site', {
         abstract: true,
         templateUrl: 'site.html'
-    })
+      })
+      .state('site.about', {
+        url: '/about',
+        templateUrl: 'about.html'        
+      })
       .state('site.stories', {
         url: '/stories',
         templateUrl: 'stories.html',
@@ -19,6 +23,10 @@ angular
             return StoriesService.getStories();
           }
         }
+      })
+      .state('site.showStory', {
+        url: '/stories/:id',
+        templateUrl: 'show.html'        
       });
           
     $urlRouterProvider.otherwise('/');
