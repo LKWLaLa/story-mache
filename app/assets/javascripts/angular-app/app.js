@@ -24,7 +24,7 @@ angular
           }
         }
       })
-      .state('site.showStory', {
+      .state('show', {
         url: '/stories/:id',
         templateUrl: 'show.html'        
       });
