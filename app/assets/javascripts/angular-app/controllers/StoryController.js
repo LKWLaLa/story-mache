@@ -3,7 +3,16 @@ function StoryController(story) {
 
   ctrl.data = story.data;
   ctrl.contributorCount = story.data.contributions.length;
-  ctrl.lastUpdate = (story.data.contributions.pop()).created_at;
+
+  ctrl.lastUpdate = lastUpdate();
+
+  function lastUpdate(){
+    if (ctrl.contributorCount > 0){
+    return story.data.contributions.pop().created_at;
+   };
+   return "contribute to this story!";
+  }
+ 
 
 }
 
