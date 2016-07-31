@@ -10,26 +10,25 @@
                 
     <div class="margin-left margin-right">
         <br>
-        <h4 class="text bold color theme inline">Story stats:</h4>                
+        <h4 class="text bold color theme inline">{{story.data.title}}:</h4>                
     </div>
   
     <ul class="margin" data-tuktuk="totals">      
-      <li><strong>15</strong><small>contributors</small></li>
+      <li><strong>{{story.contributorCount}}</strong><small>contributors</small></li>
       
     </ul>
    
     <div class="margin">
         <strong class="text big">Date last updated:</strong>
-        <div class="text justify medium">March 2, 2016</div>
+        <div class="text justify medium">{{story.lastUpdate | date: 'mediumDate'}}</div>
     </div><br>
 
     <div data-tuktuk="menu" class="text center">   
       <span class="icon pencil text bold">&nbsp; History:</span>
       <br><br>
 
-      <ul>
-        <li>Person name  |  Jan 2015</li>
-        <li>name  |  Aug 2016</li>
+      <ul ng-repeat="contributor in story.history">
+        <li>{{contributor}}</li>
       </ul>  
     </div>   
 
@@ -38,7 +37,7 @@
 
   <div id="main">
     <section class="offset_2 padding">
-       <h3>Title</h3>
+       <h3>{{story.data.title}}</h3>
 
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ad vero, quaerat dicta, accusamus ullam nesciunt suscipit, nulla officiis libero magni repellat! Consectetur debitis expedita adipisci molestiae modi corporis voluptas!<p><br>
 
