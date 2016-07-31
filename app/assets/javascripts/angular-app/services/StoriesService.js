@@ -4,6 +4,10 @@ function StoriesService($http) {
   this.getStories = function () {
     return $http.get(API_URL + '/stories')
   };
+
+   this.getStory = function (id) {
+    return $http.get(API_URL + '/stories/' + id)
+  };
 };
 
 

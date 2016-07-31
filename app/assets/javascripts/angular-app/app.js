@@ -26,7 +26,13 @@ angular
       })
       .state('show', {
         url: '/stories/:id',
-        templateUrl: 'show.html'        
+        templateUrl: 'show.html',
+        controller: 'StoryController as story',
+        resolve: {
+          story: function ($stateParams, StoriesService) {
+            return StoriesService.getStory($stateParams.id);
+            }  
+          }      
       });
           
     $urlRouterProvider.otherwise('/');
