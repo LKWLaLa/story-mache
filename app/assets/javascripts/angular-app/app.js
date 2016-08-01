@@ -20,9 +20,9 @@ angular
           }
         }
       })
-      .state('show', {
+      .state('story', {
         url: '/stories/:id',
-        templateUrl: 'show.html',
+        templateUrl: 'story.html',
         controller: 'StoryController as story'
       });
           
