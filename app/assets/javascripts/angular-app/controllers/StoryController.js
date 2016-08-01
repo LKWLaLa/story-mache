@@ -1,17 +1,30 @@
-function StoryController(story) {
+function StoryController(StoriesService, $stateParams) {
   var ctrl = this
+  
 
-  ctrl.data = story.data;
-  ctrl.contributorCount = story.data.contributions.length;
+  ctrl.getStory = function(id){
+    StoriesService.getStory(id)
+    .then(function(story){
+      ctrl.data = story.data;
+      ctrl.contributorCount = story.data.contributions.length;
+      ctrl.contributions = story.data.contributions;
+      ctrl.lastUpdate = lastUpdate();
+    }, function(error){
+        alert('Unable to get story: ' + error.statusText);
+    })
+  }
 
-  ctrl.lastUpdate = lastUpdate();
+  ctrl.getStory($stateParams.id);
+
 
   function lastUpdate(){
     if (ctrl.contributorCount > 0){
-    return story.data.contributions.pop().created_at;
+    return ctrl.contributions[(ctrl.contributions.length) - 1].created_at;
    };
    return "contribute to this story!";
   }
+
+  
  
 
 }
