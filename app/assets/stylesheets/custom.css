@@ -34,4 +34,8 @@
   overflow: scroll;
 }
 
+#history {
+  height: 225px;
+  overflow-y: auto;
+}
 

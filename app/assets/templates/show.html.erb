@@ -12,12 +12,13 @@
 
 
     <div class="margin-left">   
-      <h6 class="text bold">History:</h6>
-      
-        <li ng-repeat="contribution in story.contributions">{{contribution.author}} | {{contribution.created_at | date: 'mediumDate'}}</li>
-       
+      <h6 class="text bold color theme">History:</h6>
+        <ul id="history">      
+          <li ng-repeat="contribution in story.contributions">{{contribution.author}} | {{contribution.created_at | date: 'mediumDate'}}</li>
+        </ul>       
     </div>  
-  </aside>
+
+  </aside><!--sidebar ends-->
 
 
   <div>
