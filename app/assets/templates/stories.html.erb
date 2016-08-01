@@ -18,7 +18,7 @@
 
         <ul ng-repeat="story in stories.data | filter: stories.search">   
             <li class="column_3">
-                <a ui-sref="site.show({ id: story.id })">
+                <a ui-sref="show({ id: story.id })">
                   <div class="bck light text center padding-top padding-bottom">{{story.title}}</div><br>
                 </a>
             </li>
