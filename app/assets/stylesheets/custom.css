@@ -22,7 +22,16 @@
 }
 
 #main {
-  min-height:801px;
+  min-height:750px;
   background-image: url('/assets/typewriter.jpg');
   background-size: cover;
 }
+
+#story {
+  padding:1em;
+  padding-right:3em;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+
