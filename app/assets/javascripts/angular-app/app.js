@@ -26,7 +26,6 @@ angular
         controller: 'StoryController as story'
       })
       .state('story.contribute', {
-        url: '/stories/:id/contribute',
         templateUrl: 'contribute.html',
         controller: 'StoryController as story'
       });
