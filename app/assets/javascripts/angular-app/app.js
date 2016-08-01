@@ -6,15 +6,11 @@ angular
         url: '/',
         templateUrl: 'landing.html'
       })
-      .state('site', {
-        abstract: true,
-        templateUrl: 'site.html'
-      })
-      .state('site.about', {
+      .state('about', {
         url: '/about',
         templateUrl: 'about.html'        
       })
-      .state('site.stories', {
+      .state('stories', {
         url: '/stories',
         templateUrl: 'stories.html',
         controller: 'StoriesController as stories',
@@ -24,7 +20,7 @@ angular
           }
         }
       })
-      .state('site.show', {
+      .state('show', {
         url: '/stories/:id',
         templateUrl: 'show.html',
         controller: 'StoryController as story'
