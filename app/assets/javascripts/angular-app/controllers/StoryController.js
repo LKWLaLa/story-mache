@@ -2,8 +2,8 @@ function StoryController(StoriesService, $stateParams) {
   var ctrl = this
   
 
-  ctrl.getStory = function(id){
-    StoriesService.getStory(id)
+  ctrl.getStory = function(){
+    StoriesService.getStory($stateParams.id)
     .then(function(story){
       ctrl.data = story.data;
       ctrl.contributorCount = story.data.contributions.length;
@@ -14,7 +14,7 @@ function StoryController(StoriesService, $stateParams) {
     })
   }
 
-  ctrl.getStory($stateParams.id);
+  ctrl.getStory();
 
 
   function lastUpdate(){
