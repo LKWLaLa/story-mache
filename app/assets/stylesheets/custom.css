@@ -39,3 +39,20 @@
   overflow-y: auto;
 }
 
+form#contribution input[type="text"] {
+  color: black;
+  border-color: black !important;
+  background-color:   #e6ffe6;
+}
+
+form#contribution textarea[type="text"]{
+  color: black;
+  border-color: black !important;
+  background-color:   #e6ffe6;
+}
+
+form#contribution input[type="button"]:disabled{
+  display: none;
+}
+
+
