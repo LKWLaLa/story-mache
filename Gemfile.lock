@@ -46,6 +46,8 @@ GEM
       sprockets (~> 3.0)
       tilt
     angular-ui-router-rails (0.2.15)
+    angular_rails_csrf (1.0.4)
+      rails (>= 3, < 5)
     angularjs-rails (1.5.6)
     arel (6.0.3)
     binding_of_caller (0.7.2)
@@ -155,6 +157,7 @@ DEPENDENCIES
   active_model_serializers
   angular-rails-templates
   angular-ui-router-rails
+  angular_rails_csrf
   angularjs-rails
   byebug
   jquery-rails

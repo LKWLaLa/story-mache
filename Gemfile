@@ -18,6 +18,8 @@ gem 'angularjs-rails'
 gem 'angular-ui-router-rails'
 # Use angular templates
 gem 'angular-rails-templates'
+# Add rails authenticy token into headers for angular $http requests
+gem 'angular_rails_csrf'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use ActiveModel::Serializer
