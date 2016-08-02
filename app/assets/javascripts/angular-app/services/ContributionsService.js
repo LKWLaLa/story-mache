@@ -2,8 +2,12 @@ var API_URL ='http://localhost:3000'
 
 function ContributionsService($http) {
   
-   this.saveContribution = function (story_id) {
-    
+   this.saveContribution = function (story_id, author, body) {
+     return $http.post(API_URL +'/contributions', {
+      story_id: story_id, 
+      author: author,
+      body: body
+    });
   };
 };
 
