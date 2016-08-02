@@ -1,1 +1,43 @@
-<div>A form will go here.</div>
+ <br><br>
+ <div class="column_11 bck dark padding padding-bottom">
+
+    <form name="form" class="column_10">
+                
+        Add to story here!
+        <input
+            type="text"
+            name="body"
+            required="required"
+            ng-model="contribution.body" />
+
+        <div ng-if="form.body.$touched">
+            <div ng-if="form.body.$error.required">
+                Content is required.
+            </div>
+        </div><br>
+    
+    
+        Author name (required):
+        <input
+            type="text"
+            name="author"
+            maxlength="15"
+            required="required"
+            ng-model="contribution.author" />
+
+        <div ng-if="form.author.$touched">
+            <div ng-if="form.author.$error.required">
+                Name is required.
+            </div>                        
+        </div><br>
+    
+    
+        <input
+            type="button"
+            name="submit"
+            value="submit"
+            ng-click="contribution.submit()" />
+           
+
+    </form><br>
+ </div>
