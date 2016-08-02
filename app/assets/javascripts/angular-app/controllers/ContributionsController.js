@@ -12,7 +12,7 @@ function ContributionsController(ContributionsService, $stateParams) {
                 alert('successfully saved to database!');
             }, function(error){
         alert('Unable to submit: ' + error.statusText);;
-    };
+    });
 
 
 }
