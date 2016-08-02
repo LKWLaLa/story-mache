@@ -4,11 +4,12 @@
     <form name="form" class="column_9">
                 
         Add to story here!
-        <input
+        <textarea
             type="text"
             name="body"
             required="required"
-            ng-model="contribution.body" />
+            ng-model="contribution.body"
+            placeholder="Your addition..."></textarea>
 
         <div ng-if="form.body.$touched">
             <div ng-if="form.body.$error.required">
@@ -17,7 +18,7 @@
         </div><br>
     
     
-        Author name (required):
+        Author name:
         <input
             type="text"
             name="author"
@@ -36,6 +37,7 @@
             type="button"
             name="submit"
             value="submit"
+            ng-disabled="form.$invalid"
             ng-click="contribution.submit()" />
            
 
