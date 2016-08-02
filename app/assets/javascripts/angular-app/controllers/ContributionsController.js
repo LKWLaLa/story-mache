@@ -7,15 +7,14 @@ function ContributionsController(ContributionsService, $stateParams) {
  
     this.submitForm = function() {
         ContributionsService
-            .saveContribution($stateParams.user_id, ctrl.author, ctrl.body)
+            .saveContribution($stateParams.id, ctrl.author, ctrl.body)
             .then(function () {
                 alert('successfully saved to database!');
             }, function(error){
-        alert('Unable to submit: ' + error.statusText);;
-    });
-
-
-}
+        alert('Unable to submit: ' + error.statusText);
+       })
+    }
+} 
 
 angular
   .module('app')
