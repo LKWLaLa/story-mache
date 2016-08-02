@@ -27,7 +27,7 @@ angular
       })
       .state('story.contribute', {
         templateUrl: 'contribute.html',
-        controller: 'StoryController as story'
+        controller: 'ContributionsController as contribution'
       });
           
     $urlRouterProvider.otherwise('/');
