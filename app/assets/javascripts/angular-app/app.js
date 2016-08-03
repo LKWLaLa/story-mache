@@ -28,6 +28,11 @@ angular
       .state('story.contribute', {
         templateUrl: 'contribute.html',
         controller: 'ContributionsController as contribution'
+      })
+      .state('story.new'{
+        url: '/stories/new',
+        templateUrl: 'new.html',
+        controller: 'NewStoryController as new'
       });
           
     $urlRouterProvider.otherwise('/');

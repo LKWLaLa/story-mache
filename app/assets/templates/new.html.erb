@@ -1,0 +1,17 @@
+<form name="form" class="column_9" id="new">
+                
+        <h3>What is the title of your story?</h3>
+        <input
+            type="text"
+            name="title"
+            required="required"
+            ng-model="new.title"
+            placeholder="title here..."></textarea>
+
+        <div ng-if="form.title.$touched">
+            <div ng-if="form.title.$error.required">
+                <strong>Please type a title.</strong>
+            </div>
+        </div>
+
+</form>
