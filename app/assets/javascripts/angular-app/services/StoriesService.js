@@ -8,6 +8,13 @@ function StoriesService($http) {
    this.getStory = function (id) {
     return $http.get(API_URL + '/stories/' + id)
   };
+
+   this.saveStory = function (title) {
+     return $http.post(API_URL + '/stories/', {
+      title: title
+    });
+  };
+  
 };
 
 
