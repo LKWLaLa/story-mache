@@ -10,6 +10,11 @@ angular
         url: '/about',
         templateUrl: 'about.html'        
       })
+      .state('new', {
+        url: '/new',
+        templateUrl: 'new.html',
+        controller: 'NewStoryController as new'
+      })
       .state('stories', {
         url: '/stories',
         templateUrl: 'stories.html',
@@ -28,11 +33,6 @@ angular
       .state('story.contribute', {
         templateUrl: 'contribute.html',
         controller: 'ContributionsController as contribution'
-      })
-      .state('story.new'{
-        url: '/stories/new',
-        templateUrl: 'new.html',
-        controller: 'NewStoryController as new'
       });
           
     $urlRouterProvider.otherwise('/');
