@@ -5,7 +5,7 @@
   <aside class="column_3 scroll"> 
    
     <div class="margin">
-      <button ui-sref="story.contribute" class="success small">Add to this story!</button><br><br>
+      <button ui-sref="story.contribute" ui-sref-active="contribute" class="success small">Add to this story!</button><br><br>
       <strong class="text big color theme">Date last updated:</strong>
       <div class="text justify medium">{{story.lastUpdate | date: 'mediumDate'}}</div><br>
 
@@ -18,16 +18,6 @@
       <h6 class="text bold color theme">History:</h6>
         <ul id="history">      
           <li ng-repeat="contribution in story.contributions">{{contribution.author}} | {{contribution.created_at | date: 'mediumDate'}}</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
         </ul>       
     </div>  
 
@@ -35,16 +25,14 @@
 
 
   <div>
-    <section id="story" class="column_11">
-      <div class="row">
-        <h3>{{story.data.title}}<h3>
+    <section class="column_11">
+      <div id="story">
+        <h3>{{story.data.title}}</h3><br>
         
-      </div><br>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ad vero, quaerat dicta, accusamus ullam nesciunt suscipit, nulla officiis libero magni repellat! Consectetur debitis expedita adipisci molestiae modi corporis voluptas!<p><br>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ad vero, quaerat dicta, accusamus ullam nesciunt suscipit, nulla officiis libero magni repellat! Consectetur debitis expedita adipisci molestiae modi corporis voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et facilis, veritatis. Iste, saepe recusandae esse molestiae accusantium iusto sunt dolore quae. Molestiae neque quasi laboriosam soluta esse vel quaerat. Excepturi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis consequuntur quidem sunt reprehenderit qui illo, voluptatibus doloribus, dicta optio quaerat. Molestias blanditiis quos ducimus dicta debitis asperiores temporibus velit?<p><br>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ad vero, quaerat dicta, accusamus ullam nesciunt suscipit, nulla officiis libero magni repellat! Consectetur debitis expedita adipisci molestiae modi corporis<p><br> 
+        <span ng-repeat="contribution in story.contributions" class="text big">
+        {{contribution.body}}  </span>
+         
+       </div>
 
        <div ui-view></div>
 
