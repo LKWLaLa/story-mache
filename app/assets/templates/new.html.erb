@@ -1,12 +1,18 @@
-<form name="form" class="column_9" id="new">
+<trees-header></trees-header>
+
+<main-nav></main-nav><br>
+
+<div class="column_5 offset_2">
+
+<form name="form" class="column_7" id="new">
                 
-        <h3>What is the title of your story?</h3>
+        <h3>What is the title of your story?</h3><br>
         <input
             type="text"
             name="title"
             required="required"
             ng-model="new.title"
-            placeholder="title here..."></textarea>
+            placeholder="Add new title here..."></textarea>
 
         <div ng-if="form.title.$touched">
             <div ng-if="form.title.$error.required">
@@ -15,3 +21,4 @@
         </div>
 
 </form>
+</div>
