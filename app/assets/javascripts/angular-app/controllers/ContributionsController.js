@@ -1,18 +1,22 @@
-function ContributionsController(ContributionsService, $stateParams) {
+function ContributionsController(ContributionsService, $stateParams, $state) {
     var ctrl = this;
 
     ctrl.author = ''; 
     ctrl.body = '';   
 
  
-    this.submitForm = function() {
+    ctrl.submitForm = function() {
         ContributionsService
             .saveContribution($stateParams.id, ctrl.author, ctrl.body)
             .then(function () {
-                alert('successfully saved to database!');
+                ctrl.renderStory();
             }, function(error){
         alert('Unable to submit: ' + error.statusText);
        })
+    }
+
+    ctrl.renderStory = function(){
+      $state.go('story', {}, { reload: true });;
     }
 } 
 
