@@ -10,6 +10,10 @@ angular
         url: '/about',
         templateUrl: 'about.html'        
       })
+       .state('stats', {
+        url: '/stats',
+        templateUrl: 'stats.html'        
+      })
       .state('new', {
         url: '/new',
         templateUrl: 'new.html',
