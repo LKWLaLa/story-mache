@@ -55,4 +55,10 @@ form#contribution input[type="button"]:disabled{
   display: none;
 }
 
+form#new input[type="text"] {
+  color: black;
+  border-color: black !important;
+  background-color: #FFFAE8;
+}
+
 
