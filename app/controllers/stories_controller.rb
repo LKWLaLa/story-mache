@@ -1,6 +1,6 @@
 class StoriesController < ApplicationController
 
-  before_action :set_story, only: [:show, :destroy]
+  before_action :set_story, only: [:show, :destroy, :update]
 
 
   def index
@@ -12,6 +12,11 @@ class StoriesController < ApplicationController
   def create
     @story = Story.create(title: params["title"])
     render json: @story, status: 201
+  end
+
+  def update
+    if @story.update(story_params)
+    render json: @story, status: 200
   end
 
 
@@ -29,6 +34,10 @@ class StoriesController < ApplicationController
 
   def set_story
    @story = Story.find_by(id: params[:id])
+  end
+
+  def story_params
+    params.require(:story).permit(:title, :last_updated, :total_contributions, contribution_attributes:{:story_id, :body, :author})
   end
 
 
