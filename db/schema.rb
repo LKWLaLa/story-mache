@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160726230424) do
+ActiveRecord::Schema.define(version: 20160804011030) do
 
   create_table "contributions", force: :cascade do |t|
     t.text     "body"
@@ -29,8 +29,10 @@ ActiveRecord::Schema.define(version: 20160726230424) do
 
   create_table "stories", force: :cascade do |t|
     t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.datetime "last_updated"
+    t.integer  "total_contributions"
   end
 
   create_table "story_genres", force: :cascade do |t|
