@@ -15,8 +15,10 @@ class StoriesController < ApplicationController
   end
 
   def update
-    if @story.update(story_params)
-    render json: @story, status: 200
+    raise params.inspect
+      if @story.update(story_params)
+      render json: @story, status: 200
+    end
   end
 
 
@@ -37,7 +39,8 @@ class StoriesController < ApplicationController
   end
 
   def story_params
-    params.require(:story).permit(:title, :last_updated, :total_contributions, contribution_attributes:{:story_id, :body, :author})
+    params.require(:story).permit(:title, :last_updated, 
+      :total_contributions, :contributions_attributes => [:story_id, :body, :author])
   end
 
 
