@@ -1,4 +1,4 @@
-function ContributionsController(ContributionsService, $stateParams, $state) {
+function ContributionsController(StoriesService, $stateParams, $state) {
     var ctrl = this;
 
     ctrl.author = ''; 
@@ -6,18 +6,16 @@ function ContributionsController(ContributionsService, $stateParams, $state) {
 
  
     ctrl.submitForm = function() {
-        ContributionsService
-            .saveContribution($stateParams.id, ctrl.author, ctrl.body)
+        StoriesService
+            .updateStory($stateParams.id, ctrl.author, ctrl.body)
             .then(function () {
-                ctrl.renderStory();
+                 $state.go('story', {}, { reload: true });
             }, function(error){
         alert('Unable to submit: ' + error.statusText);
        })
     }
 
-    ctrl.renderStory = function(){
-      $state.go('story', {}, { reload: true });;
-    }
+    
 } 
 
 angular
