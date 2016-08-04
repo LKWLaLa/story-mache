@@ -1,5 +1,6 @@
 class Story < ActiveRecord::Base
-  has_many :contributions
-  has_many :story_genres
-  has_many :genres, through: :story_genres
+  
+  has_many :contributions  
+  accepts_nested_attributes_for :contribution, allow_destroy: true
+
 end
