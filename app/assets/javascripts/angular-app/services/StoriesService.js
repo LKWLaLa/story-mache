@@ -16,6 +16,13 @@ function StoriesService($http) {
     });
   };
 
+  this.updateStory = function (id, contribution) {
+    return $http.patch(API_URL + '/stories/' + id), {
+       contribution_attributes: contribution
+    }
+  };
+
+
 };
 
 
