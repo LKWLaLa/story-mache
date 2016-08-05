@@ -7,10 +7,10 @@
     <div class="margin">
       <button ui-sref="story.contribute" class="success small">Add to this story!</button><br><br>
       <strong class="text big color theme">Date last updated:</strong>
-      <div class="text justify medium">{{story.lastUpdate | date: 'mediumDate'}}</div><br>
+      <div class="text justify medium">{{story.data.updated_at | date: 'mediumDate'}}</div><br>
 
         <small>CONTRIBUTORS:</small>
-        <strong class="text big padding-left">{{story.contributorCount}}</strong>    
+        <strong class="text big padding-left">{{story.data.total_contributions}}</strong>    
     </div>
 
 
