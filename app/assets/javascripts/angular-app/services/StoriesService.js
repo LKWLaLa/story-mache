@@ -17,12 +17,13 @@ function StoriesService($http) {
   };
 
   this.updateStory = function (id, author, body) {
-    return $http.patch(API_URL + '/stories/' + id), {
-       contribution_attributes: {
+    return $http.patch(API_URL + '/stories/' + id, {
+       contributions_attributes:
+       [{
         author: author,
         body: body
-       }
-    }
+       }]
+     });
   };
 
 

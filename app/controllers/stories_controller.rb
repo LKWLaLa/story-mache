@@ -1,6 +1,7 @@
 class StoriesController < ApplicationController
 
   before_action :set_story, only: [:show, :destroy, :update]
+    wrap_parameters include: [:id, :contributions_attributes]
 
 
   def index
@@ -15,8 +16,8 @@ class StoriesController < ApplicationController
   end
 
   def update
-    raise params.inspect
-      if @story.update(story_params)
+    puts params
+    if @story.update(story_params)
       render json: @story, status: 200
     end
   end
@@ -39,8 +40,8 @@ class StoriesController < ApplicationController
   end
 
   def story_params
-    params.require(:story).permit(:title, :last_updated, 
-      :total_contributions, :contributions_attributes => [:story_id, :body, :author])
+    params.require(:story).permit(:title, :total_contributions, 
+      :contributions_attributes => [:story_id, :body, :author])
   end
 
 
