@@ -8,7 +8,6 @@ function NewStoryController(StoriesService, $state) {
         StoriesService
             .saveStory(ctrl.title)
             .then(function (response) {
-               debugger;
                $state.go('story', {id: response.data.id});
             }, function(error){
         alert('Unable to submit: ' + error.statusText);
