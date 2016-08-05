@@ -1,5 +1,5 @@
 class StorySerializer < ActiveModel::Serializer
-  attributes :id, :title, :last_updated, :total_contributions
+  attributes :id, :title, :updated_at, :total_contributions
 
   has_many :contributions
   class ContributionSerializer < ActiveModel::Serializer
