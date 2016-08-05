@@ -11,7 +11,7 @@ class StoriesController < ApplicationController
 
 
   def create
-    @story = Story.create(title: params["title"])
+    @story = Story.create(title: params[:title])
     render json: @story, status: 201
   end
 
