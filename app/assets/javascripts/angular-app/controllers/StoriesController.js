@@ -2,8 +2,8 @@ function StoriesController(stories) {
   this.data = stories.data;
   this.search = '';
   this.sortBy = '';
-  this.min = '';
-  this.max = '';
+  this.minContributions = '';
+  this.maxContributions = '';
 }
 
 angular
