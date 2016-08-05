@@ -18,6 +18,8 @@ class StoriesController < ApplicationController
   def update
     puts params
     if @story.update(story_params)
+      @story.total_contributions +=1
+      @story.save
       render json: @story, status: 200
     end
   end
