@@ -18,17 +18,17 @@
     
             <span class="column_5 padding-top">
                  Filter by contributions:&nbsp;
-                 <strong>Max</strong> 
-                 <input id="total" 
-                 type="number" 
-                 ng-model="max" 
-                 min="0"
-                 class="inline"/>
-
                  <strong>Min</strong> 
                  <input id="total" 
                  type="number" 
-                 ng-model="min" 
+                 ng-model="minContributions" 
+                 min="0"
+                 class="inline"/>
+
+                 <strong>Max</strong> 
+                 <input id="total" 
+                 type="number" 
+                 ng-model="maxContributions" 
                  min="0"
                  class="inline"/>
             </span>
@@ -49,7 +49,7 @@
 
     <div class="row">
 
-        <ul ng-repeat="story in stories.data | filter: stories.search | selectedOrder:sortBy:true">   
+        <ul ng-repeat="story in stories.data | filter: stories.search | selectedOrder:sortBy:true | greaterThan: minContributions | lessThan: maxContributions">   
             <li class="column_3">
                 <a ui-sref="story({ id: story.id })">
                   <div class="bck light text center padding-top padding-bottom">{{story.title}}</div><br>
