@@ -8,13 +8,32 @@
         <div class="column_12">
             
 
-        <span class="column_2 padding-top" id="sortBy">
-            <select ng-model="sortBy">
-                <option value="">-- Order stories by --</option>
-                <option value="updated_at">Most recently updated</option>
-                <option value="total_contributions">Most contributions</option>
-            </select>
-        </span>
+            <span class="column_2 padding-top" id="sortBy">
+                <select ng-model="sortBy">
+                    <option value="">-- Order stories by --</option>
+                    <option value="updated_at">Most recently updated</option>
+                    <option value="total_contributions">Most contributions</option>
+                </select>
+            </span><!--dropdown-->
+    
+            <span class="column_5 padding-top">
+                 Filter by contributions:&nbsp;
+                 <strong>Max</strong> 
+                 <input id="total" 
+                 type="number" 
+                 ng-model="max" 
+                 min="0"
+                 class="inline"/>
+
+                 <strong>Min</strong> 
+                 <input id="total" 
+                 type="number" 
+                 ng-model="min" 
+                 min="0"
+                 class="inline"/>
+            </span>
+
+
 
 
             <div class="inline on-right padding-top padding-bottom">

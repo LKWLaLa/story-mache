@@ -61,4 +61,15 @@ form#new input[type="text"] {
   background-color: #FFFAE8;
 }
 
+input#total {
+  width: 3em;
+  height: 1.3em;
+  font-size: 1em;
+  text-align: center;
+  margin: .3em;
+  text-decoration: bold;
+  background-color:  #FFFAE8;
+}
+}
+
 
