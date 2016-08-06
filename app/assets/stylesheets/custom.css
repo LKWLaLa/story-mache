@@ -72,5 +72,10 @@ input#total {
   background-color:  #FFFAE8;
 }
 
+#secret-div {
+  height: 50%;
+  color: white;
+}
+
 
 
