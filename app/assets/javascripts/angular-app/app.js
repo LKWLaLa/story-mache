@@ -36,7 +36,11 @@ angular
       })
       .state('story.contribute', {
         templateUrl: 'contribute.html',
-        controller: 'ContributionsController as contribution'
+        controller: 'ContributionsController as contribution',
+        onEnter: function(){
+          var story = document.getElementById("story");
+          story.scrollTop = story.scrollHeight;
+         }
       });
           
     $urlRouterProvider.otherwise('/');
