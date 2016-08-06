@@ -1,8 +1,8 @@
- <span>{{contribution.body}}</span>
- <br><br>
+ <span class="text big">{{contribution.body}}</span>
+ <br><br><br><br><br>
  <div class="column_10 bck dark padding padding-bottom">
 
-    <form name="form" class="column_9" id="contribution">
+    <form name="form" class="column_9" id="contribution" novalidate>
                 
         Add to story here!
         <textarea
@@ -12,12 +12,11 @@
             ng-model="contribution.body"
             placeholder="Your addition..."></textarea>
 
-        <div ng-if="form.body.$touched">
+        <div ng-if="form.body.$invalid && form.body.$touched">
             <div ng-if="form.body.$error.required">
                 <strong>Content is required.</strong>
             </div>
         </div><br>
-    
     
         Author name:
         <input
@@ -27,12 +26,12 @@
             required="required"
             ng-model="contribution.author" />
 
-        <div ng-if="form.author.$touched">
+        <div ng-if="form.author.$invalid && form.author.$touched">
             <div ng-if="form.author.$error.required">
                 <strong>Name is required.</strong>
             </div>                        
         </div><br><br>
-    
+
         <div>
             <input
                 type="button"
