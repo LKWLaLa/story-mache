@@ -106,5 +106,23 @@ span[data-tip] {
     display: inline;
 }
 
+#pagination {
+  position: absolute;
+  width:100%;
+  margin-right: 2%;
+  right: 5em;
+  bottom: 2em;
+  left: 0;
+}
+
+div.page {
+  border: 1px rgb(100,100,100);
+  padding: .3em;
+  margin: .5em;
+  font-size: .9em;
+  background-color: rgb(240,239,220);
+  color: rgb(100, 100, 100);
+}
+
 
 
