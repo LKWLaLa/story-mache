@@ -59,7 +59,7 @@ form#contribution input[type="button"]:disabled{
 form#new input[type="text"] {
   color: black;
   border-color: black !important;
-  background-color: #FFFAE8;
+  background-color: rgb(240,239,220);
 }
 
 input#total {
@@ -69,7 +69,8 @@ input#total {
   text-align: center;
   margin: .3em;
   text-decoration: bold;
-  background-color:  #FFFAE8;
+  background-color:  rgb(240,239,220);
+  outline-color: black;
 }
 
 #secret-div {
@@ -78,13 +79,12 @@ input#total {
 }
 
 select#sortBy {
-  background-color: rgb(255,250,232);
+  background-color: rgb(240,239,220);
   font-size: 1.2em;
-  color: rgb(120,120,120);
+  color: rgb(80,80,80);
   text-decoration: none;
   line-height: 2em;
-  outline-color: rgb(120,120,120);
-  outline-width: 1.5px;
+  outline-color: black;
 }
 
 
