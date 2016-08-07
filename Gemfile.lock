@@ -54,6 +54,8 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (9.0.5)
+    chart-js-rails (0.1.0)
+      railties (> 3.1)
     choice (0.2.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
@@ -160,6 +162,7 @@ DEPENDENCIES
   angular_rails_csrf
   angularjs-rails
   byebug
+  chart-js-rails
   jquery-rails
   rails (= 4.2.6)
   rails-erd
