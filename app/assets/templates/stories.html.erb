@@ -43,7 +43,7 @@
 
     <div class="row padding-top">
 
-        <ul ng-repeat="story in stories.data | filter: stories.search | selectedOrder:sortBy:true | greaterThan: minContributions | lessThan: maxContributions">   
+        <ul ng-repeat="story in stories.stories | filter: stories.search | selectedOrder:sortBy:true | greaterThan: minContributions | lessThan: maxContributions">   
             <li class="column_4">
                 <a ui-sref="story({ id: story.id })">
                   <div ng-class-odd="'odd'" ng-class-even="'even'" class="text center padding-top padding-bottom">{{story.title}}</div><br>
@@ -52,4 +52,19 @@
         <ul> 
 
     </div><!--row 2-->
+    
+
+    <footer class="row padding" id="pagination">
+      <div class="on-right">Showing page {{stories.page + 1}} of {{stories.totalPages}}</div><br>
+
+      <div ng-if="stories.page < stories.totalPages - 1" class="on-right page">
+        <a ng-click="stories.nextPage()">Next >></a>
+      </div>
+
+      <div ng-if="stories.page > 0" class="on-right page">
+        <a ng-click="stories.previousPage()"><< Back</a>
+      </div>
+    </footer>
+
+    
 </section>
