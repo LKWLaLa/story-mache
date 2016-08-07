@@ -44,9 +44,9 @@
     <div class="row padding-top">
 
         <ul ng-repeat="story in stories.data | filter: stories.search | selectedOrder:sortBy:true | greaterThan: minContributions | lessThan: maxContributions">   
-            <li class="column_3">
+            <li class="column_4">
                 <a ui-sref="story({ id: story.id })">
-                  <div class="text center padding-top padding-bottom" id="story-item">{{story.title}}</div><br>
+                  <div ng-class-odd="'odd'" ng-class-even="'even'" class="text center padding-top padding-bottom">{{story.title}}</div><br>
                 </a>
             </li>
         <ul> 
