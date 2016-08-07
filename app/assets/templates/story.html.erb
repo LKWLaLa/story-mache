@@ -30,7 +30,7 @@
         <h3>{{story.data.title}}<h3>
         
       </div><br>
-       <span ng-repeat="contribution in story.contributions" class="text big">{{contribution.body}}  </span>
+       <span ng-repeat="contribution in story.contributions" data-tip="{{contribution.author}}" id="contribution-divide" class="text big">{{contribution.body}}  </span>
 
        <span ui-view></span>
 
