@@ -5,18 +5,17 @@
 
 <section class="margin-bottom">
     <div class="row">
-        <div class="column_12">
             
 
-            <span class="column_2 padding-top" id="sortBy">
-                <select ng-model="sortBy">
+            <div class="column_3 padding-top">
+                <select ng-model="sortBy" id="sortBy">
                     <option value="">-- Order stories by --</option>
                     <option value="updated_at">Most recently updated</option>
                     <option value="total_contributions">Most contributions</option>
                 </select>
-            </span><!--dropdown-->
+            </div><!--dropdown-->
     
-            <span class="column_5 padding-top">
+            <span class="column_6 padding-top">
                  Filter by contributions:&nbsp;
                  <strong>Min</strong> 
                  <input id="total" 
@@ -31,20 +30,16 @@
                  ng-model="maxContributions" 
                  min="0"
                  class="inline"/>
-            </span>
+            </span><!--filter-->
 
 
-
-
-            <div class="inline on-right padding-top padding-bottom">
-
+            <div class="inline on-right padding">
                 <span class="icon search"></span> 
 
                 <input ng-model="stories.search" class="button secondary small text bold" placeholder="Search"></input>
                 <br><br>
+            </div><!--search-->    
 
-            </div><!--search-->            
-        </div><!--column-->
     </div><!--row 1-->
 
     <div class="row">
