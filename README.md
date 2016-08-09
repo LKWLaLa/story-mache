@@ -27,6 +27,10 @@ bundle exec rake db:migrate
 
 To start up a local server, run `rails s` and navigate to localhost:3000 in your web browser.
 
+###Contributors:
+
+ Pull requests are welcome.  Contributors, please adhere to the [Contributor Covenant code of conduct](http://contributor-covenant.org/).
+
 
 ###License:
 
