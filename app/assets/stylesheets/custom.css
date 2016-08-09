@@ -136,5 +136,13 @@ div#about a {
   color: blue;
 }
 
+footer#footer{
+  text-align: center;
+}
+
+footer#footer a{
+  color: blue;
+}
+
 
 
