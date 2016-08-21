@@ -16,7 +16,6 @@ class StoriesController < ApplicationController
   end
 
   def update
-    puts params
     if @story.update(story_params)
       @story.increment!(:total_contributions)
       render json: @story, status: 200
@@ -28,10 +27,10 @@ class StoriesController < ApplicationController
     render json: @story, status: 200
   end
 
-  def destroy
-    @story.destroy
-    render json: {}, status: 204 
-  end
+  #def destroy
+    #@story.destroy
+   # render json: {}, status: 204 
+  #end
 
 
   private
