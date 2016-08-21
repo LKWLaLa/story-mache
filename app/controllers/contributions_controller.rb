@@ -1,12 +1,12 @@
 class ContributionsController < ApplicationController
 
-  before_action :set_contribution, only: [:show, :destroy]
+  #before_action :set_contribution, only: [:show, :destroy]
 
 
-  def index
-    @contributions = Contribution.all
-    render json: @contributions, status: 200
-  end
+  #def index
+    #@contributions = Contribution.all
+    #render json: @contributions, status: 200
+  #end
 
 
   def create
@@ -19,22 +19,21 @@ class ContributionsController < ApplicationController
   end
 
 
-  def show
-    render json: @contribution, status: 200
-  end
+  #def show
+    #render json: @contribution, status: 200
+  #end
 
-  def destroy
-    @contribution.destroy
-    render json: {}, status: 204 
-  end
+  #def destroy
+    #@contribution.destroy
+    #render json: {}, status: 204 
+  #end
 
 
-  private
+  #private
 
-  def set_contribution
-   @contribuion = Contribution.find_by(id: params[:id])
-  end
-
+  #def set_contribution
+   #@contribuion = Contribution.find_by(id: params[:id])
+  #end
 
 
 end
