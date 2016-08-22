@@ -4,7 +4,7 @@
 
     <form name="form" class="column_9" id="contribution" novalidate>
                 
-        Add to story here!
+        Add to story here:
         <textarea
             type="text"
             name="body"
@@ -36,7 +36,8 @@
             <input
                 type="button"
                 name="submit"
-                value="Add to story!"
+                class="button tiny success"
+                value="Publish!"
                 ng-disabled="form.$invalid"
                 ng-click="contribution.submitForm()">
         </div><br>
