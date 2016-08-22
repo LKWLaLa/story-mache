@@ -4,7 +4,8 @@ function NewStoryController(StoriesService, $state) {
    ctrl.title = '';   
 
  
-    ctrl.createStory = function() {
+    ctrl.createStory = function(formIsValid) {
+      if(formIsValid){
         StoriesService
             .saveStory(ctrl.title)
             .then(function (response) {
@@ -12,6 +13,7 @@ function NewStoryController(StoriesService, $state) {
             }, function(error){
         alert('Unable to submit: ' + error.statusText);
        })
+      }
     }
  
 

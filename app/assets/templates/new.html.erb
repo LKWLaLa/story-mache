@@ -4,9 +4,10 @@
 
 <div class="column_5 offset_2">
 
-<form name="form" class="column_7" id="new" ng-submit="new.createStory()">
+<form name="form" class="column_7" id="new" ng-submit="new.createStory(form.$valid)" novalidate>
                 
         <h3>What is the title of your story?</h3><br>
+
         <input
             type="text"
             name="title"
@@ -15,7 +16,7 @@
             ng-model="new.title"
             placeholder="Add new title here..."></textarea>
 
-        <div ng-if="form.title.$touched">
+        <div ng-if="form.$submitted || form.title.$touched">
             <div ng-if="form.title.$error.required">
                 <strong>Please type a title.</strong>
             </div>
@@ -28,7 +29,7 @@
                 class="button tiny success margin-top"
                 value="Submit!"
                 ng-disabled="form.$invalid"
-                ng-click="new.createStory()">
+                ng-click="new.createStory(form.$valid)">
         </div><br>
 
 </form>
