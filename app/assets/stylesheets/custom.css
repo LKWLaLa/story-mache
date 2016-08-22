@@ -52,7 +52,7 @@ form#contribution textarea[type="text"]{
   background-color:   #e6ffe6;
 }
 
-form#contribution input[type="button"]:disabled{
+form input[type="button"]:disabled{
   display: none;
 }
 
