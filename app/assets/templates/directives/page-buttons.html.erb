@@ -1,13 +1,13 @@
 <section class="row padding" id="pagination">
     <div class="on-right">
-      Showing page {{stories.page + 1}} of {{stories.totalPages}}
+      Showing page {{currentPageNo}} of {{totalPages}}
     </div><br>
 
-    <div ng-if="stories.page < stories.totalPages - 1" class="on-right page">
-      <a ng-click="stories.nextPage()">Next >></a>
+    <div ng-if="currentPageNo < totalPages" class="on-right page">
+      <a ng-click="nextPage()">Next >></a>
     </div>
 
-    <div ng-if="stories.page > 0" class="on-right page">
-      <a ng-click="stories.previousPage()"><< Back</a>
+    <div ng-if="currentPageNo > 1" class="on-right page">
+      <a ng-click="previousPage()"><< Back</a>
     </div>
 </section>
