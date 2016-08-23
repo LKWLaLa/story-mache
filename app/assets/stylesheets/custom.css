@@ -107,12 +107,8 @@ span[data-tip] {
 }
 
 #pagination {
-  position: absolute;
-  width:100%;
-  margin-right: 2%;
-  right: 5em;
-  bottom: 2em;
-  left: 0;
+  width: 80vw;
+  margin-right: 9vw;
 }
 
 div.page {
