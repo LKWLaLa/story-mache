@@ -4,13 +4,17 @@ function MyPagination() {
         restrict:  'E',
 
         scope: {
-          currentPageNo: '=',
           allItems: '=',
           currentItems: '=',
           itemsPerPage: '='
         },
 
         controller: function ($scope) {
+          $scope.currentPageNo = 1
+
+          $scope.updateTotalPages = function(){
+            $scope.totalPages = Math.ceil($scope.allItems.length/$scope.itemsPerPage);
+          }
 
           $scope.previousPage = function () {
             $scope.currentPageNo--;
@@ -28,7 +32,15 @@ function MyPagination() {
             $scope.currentItems = $scope.allItems.slice(begin,end);
           };
 
-          
+
+          //if allItems changes (because of a separate filter, for instance)
+          //pagination should reset
+
+          $scope.$watch('allItems', function() {
+            $scope.currentPageNo = 1;
+            $scope.updateTotalPages();
+            $scope.paginate();
+          });
           
           $scope.paginate();
         }
