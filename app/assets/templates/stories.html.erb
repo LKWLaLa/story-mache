@@ -37,15 +37,19 @@
             <div class="inline on-right padding-top">
                 <span class="icon search"></span> 
 
-                <input ng-model="stories.search" ng-change="stories.refilter()"class="button secondary small text bold" placeholder="Search"></input>
+                <input ng-model="stories.search" 
+                ng-change="stories.refilter()"
+                class="button secondary small text bold" 
+                placeholder="Search"></input>                
                 <br><br>
+                                
             </div><!--search-->    
 
     </div><!--row 1-->
 
     <div class="row padding-top">
 
-        <ul ng-repeat="story in stories.stories">   
+        <ul ng-repeat="story in stories.displayedStories">   
             <li class="column_4">
                 <a ui-sref="story({ id: story.id })">
                   <div ng-class-odd="'odd'" ng-class-even="'even'" class="text center padding-top padding-bottom">{{story.title}}</div><br>
@@ -55,7 +59,12 @@
 
     </div><!--row 2-->
     
-
-    
+    <my-pagination
+      all-items="stories.filteredStories"
+      current-items="stories.displayedStories"
+      items-per-page=12
+      ></my-pagination>
     
 </section>
+
+
