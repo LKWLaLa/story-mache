@@ -25,6 +25,11 @@ angular
           }
         }
       })
+       .state('authors', {
+        url: '/authors/:name',
+        templateUrl: 'authors.html',
+        controller: 'ContributionsController as contribution'
+      })
       .state('story', {
         url: '/stories/:id',
         templateUrl: 'story.html',
