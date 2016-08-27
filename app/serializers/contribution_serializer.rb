@@ -1,3 +1,3 @@
 class ContributionSerializer < ActiveModel::Serializer
-  attributes :id, :author, :body, :created_at
+  attributes :id, :author_name, :body, :created_at
 end

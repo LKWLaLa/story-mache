@@ -18,7 +18,7 @@
       <h6 class="text bold color theme">History:</h6>
         <ul id="history">      
           <li ng-repeat="contribution in story.contributions">
-          <a ui-sref="authors({name: contribution.author})">{{contribution.author}}</a>| {{contribution.created_at | date: 'mediumDate'}}</li>
+          <a ui-sref="authors({name: contribution.author_name})">{{contribution.author_name}}</a>| {{contribution.created_at | date: 'mediumDate'}}</li>
         </ul>       
     </div>  
 
@@ -31,7 +31,7 @@
         <h3>{{story.data.title}}<h3>
         
       </div><br>
-       <span ng-repeat="contribution in story.contributions" data-tip="{{contribution.author}}" id="contribution-divide" class="text big">{{contribution.body}}  </span>
+       <span ng-repeat="contribution in story.contributions" data-tip="{{contribution.author_name}}" id="contribution-divide" class="text big">{{contribution.body}}  </span>
 
        <span ui-view></span>
 

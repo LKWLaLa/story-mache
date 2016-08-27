@@ -3,7 +3,7 @@ class StorySerializer < ActiveModel::Serializer
 
   has_many :contributions
   class ContributionSerializer < ActiveModel::Serializer
-    attributes :author, :body, :created_at
+    attributes :author_name, :body, :created_at
   end
 
 
