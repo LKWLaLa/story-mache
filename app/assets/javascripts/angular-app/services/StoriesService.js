@@ -21,7 +21,8 @@ function StoriesService($http) {
        contributions_attributes:
        [{
         author_name: author,
-        body: body
+        body: body,
+        author_attributes: {name: author}
        }]
      });
   };

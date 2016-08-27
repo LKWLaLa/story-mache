@@ -41,7 +41,10 @@ class StoriesController < ApplicationController
 
   def story_params
     params.require(:story).permit(:title, :total_contributions, 
-      :contributions_attributes => [:story_id, :body, :author_name, :author_id])
+      :contributions_attributes => [
+        :story_id, :body, :author_name, :author_id,
+        :author_attributes => [:id, :name]
+        ])
   end
 
 
