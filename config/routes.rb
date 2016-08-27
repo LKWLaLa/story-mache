@@ -3,8 +3,7 @@ Rails.application.routes.draw do
    root 'home#index'
 
     resources :stories 
-    resources :authors, only: [:show]
-
+    get 'authors/:name' => 'authors#show'
 
 
   # Example of regular route:
