@@ -20,7 +20,7 @@ function StoriesService($http) {
     return $http.patch(API_URL + '/stories/' + id, {
        contributions_attributes:
        [{
-        author: author,
+        author_name: author,
         body: body
        }]
      });
