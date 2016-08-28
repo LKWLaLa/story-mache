@@ -7,12 +7,19 @@ function ContributionsController(StoriesService, $stateParams, $state) {
  
     ctrl.submitForm = function() {
         StoriesService
-            .updateStory($stateParams.id, ctrl.author, ctrl.body)
+            .updateStory($stateParams.id, 
+              makeUrlFriendly(ctrl.author), 
+              ctrl.body)
             .then(function () {
                  $state.go('story', {}, { reload: true });
             }, function(error){
         alert('Unable to submit: ' + error.statusText);
        })
+    }
+
+     function makeUrlFriendly(string){
+      return string.replace(' ','-')
+        .replace(/[.,\/#!$@%\^&\*;:{}=\_`~()]/g,"");
     }
 
     
