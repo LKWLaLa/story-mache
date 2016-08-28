@@ -22,14 +22,18 @@
         <input
             type="text"
             name="author"
+            pattern="[a-zA-Z0-9\s]+"
             maxlength="15"
             required="required"
             ng-model="contribution.author" />
 
-        <div ng-if="form.author.$invalid && form.author.$touched">
+        <div ng-if="form.author.$invalid && form.author.$dirty">
             <div ng-if="form.author.$error.required">
                 <strong>Name is required.</strong>
-            </div>                        
+            </div>  
+            <div ng-if="form.author.$error.pattern">
+                <strong>Please enter alphanumeric characters only.</strong>
+            </div>                       
         </div><br><br>
 
         <div>
