@@ -25,10 +25,10 @@ angular
           }
         }
       })
-       .state('authors', {
+       .state('author', {
         url: '/authors/:name',
         templateUrl: 'authors.html',
-        controller: 'ContributionsController as contribution'
+        controller: 'AuthorController as author'
       })
       .state('story', {
         url: '/stories/:id',
