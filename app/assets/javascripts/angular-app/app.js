@@ -27,7 +27,7 @@ angular
       })
        .state('author', {
         url: '/authors/:name',
-        templateUrl: 'authors.html',
+        templateUrl: 'author.html',
         controller: 'AuthorController as author'
       })
       .state('story', {
