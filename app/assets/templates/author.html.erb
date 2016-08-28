@@ -8,8 +8,10 @@
   <ul ng-repeat="contribution in author.contributions" class="text center">
 
     <div>
-      {{contribution.created_at | date: 'mediumDate'}} | {{contribution.story.title}}:
-      <br>
+      {{contribution.created_at | date: 'mediumDate'}} | 
+      <a ui-sref="story({id: contribution.story.id})">
+        {{contribution.story.title}}:
+      </a><br>
       "{{contribution.body}}"
     </div>
     <br>
