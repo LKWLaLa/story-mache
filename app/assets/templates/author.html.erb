@@ -1,0 +1,21 @@
+<main-nav></main-nav>
+
+<div id="about">
+  <h2 class="text center">{{author.data.name}}</h2>
+  <h5 class="text center">Contributions by date:</h5>
+  <br>
+
+  <ul ng-repeat="contribution in author.contributions" class="text center">
+
+    <div>
+      {{contribution.created_at | date: 'mediumDate'}} | {{contribution.story.title}}:
+      <br>
+      "{{contribution.body}}"
+    </div>
+    <br>
+
+  </ul>
+
+
+
+</div>
