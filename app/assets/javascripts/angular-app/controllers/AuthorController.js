@@ -3,7 +3,7 @@ function AuthorController(AuthorsService, $stateParams, $state) {
   
 
   ctrl.getAuthor = function(){
-    AuthorsService.getAuthor($stateParams.name)
+    AuthorsService.getAuthor($stateParams.name.replace('-', ' '))
     .then(function(author){
       if(author.data == null){
         alert('That is not a valid author.');
