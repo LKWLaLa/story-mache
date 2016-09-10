@@ -3,7 +3,7 @@
 }
 
 #text-and-button {
-  margin-top: 5em;
+  margin-top: 6em;
   padding: 9em;
   text-align: center;
 }
@@ -12,7 +12,14 @@
   height: 3em;
   white-space: nowrap;
   overflow: hidden;
-  text-align: center;
+}
+
+@media only screen and (max-width: 766px) {
+    #enter-button {
+      width: 10em;
+      text-align: center;
+      padding: 0;
+    }
 }
 
 .trees {
@@ -22,7 +29,7 @@
 
 #trees {
   cursor: pointer;
-  curson: hand;
+  cursor: hand;
 }
 
 #main {
@@ -112,8 +119,8 @@ select#sortBy {
 }
 
 span[data-tip] {
-    position: relative;
-    display: inline;
+  position: relative;
+  display: inline;
 }
 
 #pagination {
