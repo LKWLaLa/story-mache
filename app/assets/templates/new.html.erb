@@ -2,9 +2,9 @@
 
 <main-nav></main-nav><br>
 
-<div class="column_5 offset_2">
+<div>
 
-<form name="form" class="column_7" id="new" ng-submit="new.createStory(form.$valid)" novalidate>
+<form name="form" id="new" ng-submit="new.createStory(form.$valid)" novalidate>
                 
         <h3>What is the title of your story?</h3><br>
 
@@ -12,7 +12,7 @@
             type="text"
             name="title"
             required="required"
-            maxlength ="35"
+            maxlength ="60"
             ng-model="new.title"
             placeholder="Add new title here..."></textarea>
 
