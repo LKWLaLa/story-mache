@@ -56,6 +56,11 @@ form input[type="button"]:disabled{
   display: none;
 }
 
+form#new {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 form#new input[type="text"] {
   color: black;
   border-color: black !important;
