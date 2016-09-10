@@ -20,6 +20,11 @@
   background-size: cover;
 }
 
+#trees {
+  cursor: pointer;
+  curson: hand;
+}
+
 #main {
   height: 90vh;
   background-image: url('/assets/typewriter.jpg');
