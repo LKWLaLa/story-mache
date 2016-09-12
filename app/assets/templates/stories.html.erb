@@ -13,9 +13,10 @@
                     <option value="total_contributions">Most contributions</option>
                 </select>
             </div><!--dropdown-->
+            <br class="br"><br class="br">
     
-            <span class="column_5 padding-top">
-                 Filter by contributions:&nbsp;
+            <span class="column_5 padding-top contributions-filter">
+                 <span class="filter-text">Filter by contributions:</span>
                  <strong>Min</strong> 
                  <input id="total" 
                  type="number" 
@@ -32,9 +33,10 @@
                  min="0"
                  class="inline"/>
             </span><!--filter-->
+             <br class="br">
 
 
-            <div class="inline on-right padding-top">
+            <div class="inline on-right padding-top" id="search">
                 <span class="icon search"></span> 
 
                 <input ng-model="stories.search" 

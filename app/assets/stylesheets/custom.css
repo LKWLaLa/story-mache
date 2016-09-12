@@ -157,5 +157,37 @@ footer#footer a{
   color: blue;
 }
 
+.filter-text {
+  margin-right: .5em;
+}
+
+.contributions-filter {
+  white-space: nowrap;
+}
+
+.br {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px){
+  .br {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  #search {
+    margin-right: 12%;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  #sortBy {
+    margin-left: 17%;
+  }
+}
+
+
+
 
 
