@@ -38,17 +38,63 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 1200px) {
+    #main {
+      background-image: none;
+    }
+}
+
 #story {
-  padding:1em;
-  padding-left: 2em;
-  padding-right:3em;
-  height: 67%;
+  padding: 3%;
+  height: 65%;
+  width: 70vw;
   overflow: scroll;
 }
+
+#story h3 {
+    width: 60%;
+  }
+
+aside.column_3#aside {
+  width: 18vw;
+}
+
+@media only screen and (max-width: 900px) {
+    #add-button {
+      padding: 0;
+      width: 85%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    aside.column_3#aside {
+      width: 33vw;
+  }
+
+  #story {
+    padding: 3%;
+    height: 60%;
+    width: 57vw;
+    overflow: scroll;
+  }
+
+  span div#black {
+    width: 55vw;
+  }
+}
+
 
 #history {
   height: 175px;
   overflow-y: auto;
+}
+
+div#black {
+  width: 65vw;
+}
+
+form#contribution {
+  width: 90%;
 }
 
 

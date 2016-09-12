@@ -2,10 +2,10 @@
 
 <div data-tuktuk="boxes" id="main">
     
-  <aside class="column_3"> 
+  <aside class="column_3" id="aside"> 
    
     <div class="margin">
-      <button ui-sref="story.contribute" class="success small">Add to this story!</button><br><br>
+      <button ui-sref="story.contribute" class="success small" id="add-button">Add to this story!</button><br><br>
       <strong class="text big color theme">Date last updated:</strong>
       <div class="text justify medium">{{story.data.updated_at | date: 'mediumDate'}}</div><br>
 
