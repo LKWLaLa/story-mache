@@ -1,239 +1,232 @@
 #text-and-button h1 {
-  font-size: 7vw;
+    font-size: 7vw
 }
 
 #text-and-button {
-  margin-top: 6em;
-  padding: 9em;
-  text-align: center;
+    margin-top: 6em;
+    padding: 9em;
+    text-align: center;
 }
 
 #enter-button {
-  height: 3em;
-  white-space: nowrap;
-  overflow: hidden;
+    height: 3em;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 766px) { 
     #enter-button {
-      width: 10em;
-      text-align: center;
-      padding: 0;
+        width: 10em;
+        text-align: center;
+        padding: 0;
     }
 }
 
 .trees {
-  background-image: url('/assets/trees.jpg');
-  background-size: cover;
+    background-image: url('/assets/trees.jpg');
+    background-size: cover;
 }
 
 #trees {
-  cursor: pointer;
-  cursor: hand;
+    cursor: pointer;
+    cursor: hand;
 }
 
 #main {
-  height: 90vh;
-  background-image: url('/assets/typewriter.jpg');
-  background-size: cover;
+    height: 90vh;
+    background-image: url('/assets/typewriter.jpg');
+    background-size: cover;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) { 
     #main {
-      background-image: none;
+        background-image: none
     }
 }
 
 #story {
-  padding: 3%;
-  height: 65%;
-  width: 70vw;
-  overflow: scroll;
+    padding: 3%;
+    height: 65%;
+    width: 70vw;
+    overflow: scroll;
 }
 
-#story h3 {
-    width: 60%;
-  }
+ #story h3 {
+     width: 60%
+ }
 
 aside.column_3#aside {
-  width: 18vw;
+    width: 18vw
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) { 
     #add-button {
-      padding: 0;
-      width: 85%;
+        padding: 0;
+        width: 85%;
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) { 
     aside.column_3#aside {
-      width: 33vw;
-  }
+        width: 33vw
+    }
 
-  #story {
-    padding: 3%;
-    height: 60%;
-    width: 57vw;
-    overflow: scroll;
-  }
+    #story {
+        padding: 3%;
+        height: 60%;
+        width: 57vw;
+        overflow: scroll;
+    }
 
-  span div#black {
-    width: 55vw;
-  }
+    span div#black {
+        width: 55vw
+    }
 }
 
-
 #history {
-  height: 175px;
-  overflow-y: auto;
+    height: 175px;
+    overflow-y: auto;
 }
 
 div#black {
-  width: 65vw;
+    width: 65vw
 }
 
 form#contribution {
-  width: 90%;
+    width: 90%
 }
 
+ form#contribution input[type="text"] {
+     color: black;
+     border-color: black !important;
+     background-color: #e6ffe6;
+ }
 
-form#contribution input[type="text"] {
-  color: black;
-  border-color: black !important;
-  background-color:   #e6ffe6;
-}
+ form#contribution textarea[type="text"] {
+     color: black;
+     border-color: black !important;
+     background-color: #e6ffe6;
+ }
 
-form#contribution textarea[type="text"]{
-  color: black;
-  border-color: black !important;
-  background-color:   #e6ffe6;
-}
-
-form input[type="button"]:disabled{
-  display: none;
+form input[type="button"]:disabled {
+    display: none
 }
 
 form#new {
-  margin-left: 25%;
-  margin-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-form#new input[type="text"] {
-  color: black;
-  border-color: black !important;
-  background-color: rgb(240,239,220);
-}
+ form#new input[type="text"] {
+     color: black;
+     border-color: black !important;
+     background-color: rgb(240,239,220);
+ }
 
 input#total {
-  width: 3em;
-  height: 1.3em;
-  font-size: 1em;
-  text-align: center;
-  margin: .3em;
-  text-decoration: bold;
-  background-color:  rgb(240,239,220);
-  outline-color: black;
+    width: 3em;
+    height: 1.3em;
+    font-size: 1em;
+    text-align: center;
+    margin: .3em;
+    text-decoration: bold;
+    background-color: rgb(240,239,220);
+    outline-color: black;
 }
 
 #secret-div {
-  height: 50%;
-  color: white;
+    height: 50%;
+    color: white;
 }
 
 select#sortBy {
-  background-color: rgb(240,239,220);
-  font-size: 1.2em;
-  color: rgb(80,80,80);
-  text-decoration: none;
-  line-height: 2em;
-  outline-color: black;
+    background-color: rgb(240,239,220);
+    font-size: 1.2em;
+    color: rgb(80,80,80);
+    text-decoration: none;
+    line-height: 2em;
+    outline-color: black;
 }
 
 .even {
-  background-color: rgb(34,34,34);
-  color: white;
-  }
+    background-color: rgb(34,34,34);
+    color: white;
+}
 
- .odd {
-   background-color: rgb(43,190,105);
-  color: white;
+.odd {
+    background-color: rgb(43,190,105);
+    color: white;
 }
 
 #contribution-divide:hover {
-  background-color: yellow;
+    background-color: yellow
 }
 
 span[data-tip] {
-  position: relative;
-  display: inline;
+    position: relative;
+    display: inline;
 }
 
 #pagination {
-  width: 80vw;
-  margin-right: 9vw;
+    width: 80vw;
+    margin-right: 9vw;
 }
 
 div.page {
-  border: 1px rgb(100,100,100);
-  padding: .3em;
-  margin: .5em;
-  font-size: .9em;
-  background-color: rgb(240,239,220);
-  color: rgb(100, 100, 100);
+    border: 1px rgb(100,100,100);
+    padding: .3em;
+    margin: .5em;
+    font-size: .9em;
+    background-color: rgb(240,239,220);
+    color: rgb(100, 100, 100);
 }
 
 div#about {
-  background-color: rgb(240,239,220);
-  margin-top: 2em;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding:1.5em;  
+    background-color: rgb(240,239,220);
+    margin-top: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1.5em;
 }
 
-div#about a {
-  color: blue;
+ div#about a {
+     color: blue
+ }
+
+footer#footer {
+    text-align: center
 }
 
-footer#footer{
-  text-align: center;
-}
-
-footer#footer a{
-  color: blue;
-}
+ footer#footer a {
+     color: blue
+ }
 
 .filter-text {
-  margin-right: .5em;
+    margin-right: .5em
 }
 
 .contributions-filter {
-  white-space: nowrap;
+    white-space: nowrap
 }
 
 .br {
-  display: none;
+    display: none
 }
 
-@media only screen and (max-width: 960px) and (min-width: 768px){
-  .br {
-    display: block;
-  }
+@media only screen and (max-width: 960px) and (min-width: 768px) { 
+    .br {
+        display: block
+    }
 }
 
-@media only screen and (max-width: 479px){
-  #search {
-    margin-right: 12%;
-  }
+@media only screen and (max-width: 479px) { 
+    #search {
+        margin-right: 12%
+    }
 }
 
-@media only screen and (max-width: 479px){
-  #sortBy {
-    margin-left: 17%;
-  }
+@media only screen and (max-width: 479px) { 
+    #sortBy {
+        margin-left: 17%
+    }
 }
-
-
-
-
-
