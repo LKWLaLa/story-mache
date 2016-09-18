@@ -16,10 +16,11 @@ function StoryController(StoriesService, $stateParams, $state) {
     })
   }
 
-  ctrl.getStory(); 
- 
+  ctrl.getStory();  
 
 }
+
+StoryController.$inject = ['StoriesService', '$stateParams', '$state'];
 
 angular
   .module('app')

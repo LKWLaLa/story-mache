@@ -8,6 +8,7 @@ function AuthorsService($http) {
 
 };
 
+AuthorsService.$inject = ['$http'];
 
 
 angular

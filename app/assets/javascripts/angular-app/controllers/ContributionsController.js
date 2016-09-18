@@ -14,9 +14,10 @@ function ContributionsController(StoriesService, $stateParams, $state) {
         alert('Unable to submit: ' + error.statusText);
        })
     }
-
     
 } 
+
+ContributionsController.$inject = ['StoriesService', '$stateParams', '$state'];
 
 angular
   .module('app')

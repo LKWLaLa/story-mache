@@ -21,6 +21,8 @@ function AuthorController(AuthorsService, $stateParams, $state) {
 
 }
 
+AuthorController.$inject = ['AuthorsService', '$stateParams', '$state'];
+
 angular
   .module('app')
   .controller('AuthorController', AuthorController);

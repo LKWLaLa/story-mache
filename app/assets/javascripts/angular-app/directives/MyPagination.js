@@ -9,7 +9,7 @@ function MyPagination() {
           itemsPerPage: '='
         },
 
-        controller: function ($scope) {
+        controller: ['$scope', function ($scope) {
           $scope.currentPageNo = 1
 
           $scope.updateTotalPages = function(){
@@ -43,7 +43,7 @@ function MyPagination() {
           });
           
           $scope.paginate();
-        }
+        }]
     };
 }
  

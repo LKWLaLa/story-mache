@@ -22,6 +22,8 @@ function StoriesController(stories, $filter) {
    }  
 }
 
+StoriesController.$inject = ['stories', '$filter'];
+
 angular
   .module('app')
   .controller('StoriesController', StoriesController);

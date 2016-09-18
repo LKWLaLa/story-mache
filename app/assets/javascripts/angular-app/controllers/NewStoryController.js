@@ -14,10 +14,11 @@ function NewStoryController(StoriesService, $state) {
         alert('Unable to submit: ' + error.statusText);
        })
       }
-    }
- 
+    } 
 
 }
+
+NewStoryController.$inject = ['StoriesService', '$state'];
 
 angular
   .module('app')

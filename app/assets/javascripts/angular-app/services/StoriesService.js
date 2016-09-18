@@ -30,6 +30,7 @@ function StoriesService($http) {
 
 };
 
+StoriesService.$inject = ['$http'];
 
 
 angular
