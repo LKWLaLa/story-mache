@@ -20,6 +20,8 @@ gem 'angular-ui-router-rails'
 gem 'angular-rails-templates'
 # Add rails authenticy token into headers for angular $http requests
 gem 'angular_rails_csrf'
+# add ngannotate for clear DI in minification during production
+gem 'ngannotate-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use ActiveModel::Serializer
