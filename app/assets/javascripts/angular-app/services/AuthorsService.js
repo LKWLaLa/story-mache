@@ -1,4 +1,4 @@
-var API_URL ='http://localhost:3000'
+var API_URL ='https://story-mache.herokuapp.com'
 
 function AuthorsService($http) {
   
