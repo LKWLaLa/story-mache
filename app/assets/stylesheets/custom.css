@@ -75,7 +75,7 @@ aside.column_3#aside {
         padding: 3%;
         height: 60%;
         width: 57vw;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     span div#black {
