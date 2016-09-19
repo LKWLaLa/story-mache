@@ -47,8 +47,9 @@
 #story {
     padding: 3%;
     height: 65%;
-    width: 70vw;
+    max-width: 70vw;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
  #story h3 {
@@ -74,8 +75,9 @@ aside.column_3#aside {
     #story {
         padding: 3%;
         height: 60%;
-        width: 57vw;
+        max-width: 57vw;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     span div#black {
