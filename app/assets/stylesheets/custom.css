@@ -57,7 +57,8 @@
  }
 
 aside.column_3#aside {
-    width: 18vw
+    width: 13.5rem;
+    padding-right: 2.5rem;
 }
 
 @media only screen and (max-width: 900px) { 
@@ -75,7 +76,7 @@ aside.column_3#aside {
     #story {
         padding: 3%;
         height: 60%;
-        max-width: 57vw;
+        max-width: 50vw;
         overflow-y: scroll;
         overflow-x: hidden;
     }
