@@ -63,9 +63,15 @@ aside.column_3#aside {
 
 @media only screen and (min-width: 1600px) { 
     aside.column_3#aside {
-        margin-right: 10%;
+        margin-right: 4%;
     }
-}    
+} 
+
+@media only screen and (min-height: 915px) { 
+    aside.column_3#aside {
+        margin-right: 4%;
+    }
+}     
 
 @media only screen and (max-width: 900px) { 
     #add-button {
