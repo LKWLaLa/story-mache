@@ -63,7 +63,7 @@ aside.column_3#aside {
 
 @media only screen and (min-width: 1600px) { 
     aside.column_3#aside {
-        width: 25vw
+        margin-right: 10%;
     }
 }    
 
