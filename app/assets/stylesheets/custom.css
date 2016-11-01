@@ -61,6 +61,12 @@ aside.column_3#aside {
     padding-right: 2.5rem;
 }
 
+@media only screen and (min-width: 1600px) { 
+    aside.column_3#aside {
+        width: 25vw
+    }
+}    
+
 @media only screen and (max-width: 900px) { 
     #add-button {
         padding: 0;
