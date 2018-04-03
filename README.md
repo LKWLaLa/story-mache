@@ -1,18 +1,18 @@
-#story-mache
+# story-mache
 
-###Description:
+### Description:
 
 A collaborative story writing SPA, built with Angular + a Rails API backend.  
 
-###Structure:
+### Structure:
 
 Users navigate the app through the stories index page, and can browse and read stories, contribute to a story, or begin a new story of their own.  Stories are searchable by any word in the title, body, or author's name, and can be filtered by number of contributors, as well as ordered by contributor count and most recent updates.  There is a has-many relationship between stories and contributions, and users can hover over the body of a story to highlight individual contribution delineation and view author's name for each contribution.
 
-###Dependencies:
+### Dependencies:
 
 The API for story-mache is built with Rails version 4.2.6, using Ruby version 2.2.3p173, and a sqlite3 database. The active_model_serializers gem is responsible for JSON serialization.  Front end functionality depends on angularjs-rails, angular-ui-router-rails, angular-rails-templates, and angular_rails_csrf gems. 
 
-###Installation Guide:
+### Installation Guide:
 
 If not already available, install Ruby, Bundler, and Rails.
 
@@ -27,12 +27,12 @@ bundle exec rake db:migrate
 
 To start up a local server, run `rails s` and navigate to localhost:3000 in your web browser.
 
-###Contributors:
+### Contributors:
 
  Pull requests are welcome.  Contributors, please adhere to the [Contributor Covenant code of conduct](http://contributor-covenant.org/).
 
 
-###License:
+### License:
 
 The MIT License (MIT)
 
